@@ -1,0 +1,31 @@
+.section {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.section__head {
+  margin-bottom: var(--space-5);
+}
+
+.section__title {
+  font-size: var(--text-2xl);
+  font-weight: 300; /* §07: Outfit at a light weight, as in the brand guide */
+  letter-spacing: -0.01em;
+  text-transform: lowercase; /* brand guide sets titles in lowercase */
+  color: var(--text);
+}
+
+/* Short underline in the concert color, three tones (§04: skip a step). */
+.section__title::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 5px;
+  margin-top: var(--space-3);
+  background: linear-gradient(
+    90deg,
+    var(--c-1) 0 33%,
+    var(--c-3) 0 66%,
+    var(--c-5) 0
+  );
+}

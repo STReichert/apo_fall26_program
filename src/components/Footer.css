@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  padding-block: var(--space-6);
+  background: var(--off-black);
+  color: var(--cream);
+  text-align: center;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--flag-stripe);
+}
+
+.footer__inner {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+}
+
+.footer__logo { width: 96px; }
+
+.footer__small {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: #c4bcb1;
+}

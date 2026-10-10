@@ -1,0 +1,46 @@
+.hero {
+  background: var(--flag-pink);
+}
+
+.hero__image {
+  width: 100%;
+  /* Never taller than the screen, so the details bar peeks into view. */
+  max-height: 88vh;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.hero__details {
+  background: var(--off-black);
+  color: var(--cream);
+  font-family: var(--font-title);
+  font-size: var(--text-sm);
+  letter-spacing: 0.04em;
+  padding-block: var(--space-3);
+  position: relative;
+}
+
+/* §06: the full palette, held to an edge. */
+.hero__details::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--flag-stripe);
+}
+
+.hero__details-inner {
+  display: flex;
+  flex-wrap: wrap; /* stacks onto two lines on narrow screens */
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-4);
+  padding-top: var(--space-1);
+}
+
+.hero__details p { margin: 0; }
+.hero__details strong { color: var(--c-2); font-weight: 600; }
+
+/* Hide the street address on small phones to keep the bar tidy. */
+@media (max-width: 30rem) {
+  .hero__address { display: none; }
+}
