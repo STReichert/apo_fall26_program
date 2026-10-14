@@ -11,7 +11,22 @@ npm install      # once: downloads React & Vite into node_modules/
 npm run dev      # starts a live-reloading site at http://localhost:5173
 npm run build    # makes the publishable site in dist/
 npm run preview  # serves dist/ locally to double-check the build
+npm run deploy   # builds, then publishes dist/ to Cloudflare
 ```
+
+## Publish to Cloudflare
+
+The site is hosted as a static Cloudflare Worker (settings in `wrangler.jsonc`).
+Requires Node.js 22+ (see `.node-version`).
+
+```bash
+npx wrangler login   # once: opens a browser to sign in to Cloudflare
+npm run deploy       # prints the live URL when finished
+```
+
+Or connect the GitHub repo in the Cloudflare dashboard (Workers & Pages →
+Create → Import a repository) with build command `npm run build` and deploy
+command `npx wrangler deploy`; every push to `main` then redeploys.
 
 ## Folder map
 
@@ -21,6 +36,7 @@ apo_fall26_program/
 ├── package.json            Project name, scripts (dev/build), and dependencies.
 ├── package-lock.json       Exact installed versions (auto-generated; commit it).
 ├── vite.config.js          Build-tool settings.
+├── wrangler.jsonc          Cloudflare hosting settings.
 ├── node_modules/           Installed packages (auto-generated; never edit/commit).
 ├── dist/                   Built site to publish (auto-generated).
 ├── reference/              Brand guide, original graphics, early HTML draft.
@@ -49,4 +65,4 @@ apo_fall26_program/
 3. Put new images in `src/assets/images/` and update the `import` lines at
    the top of `concert.js` / `bios.js`.
 4. Change `color` in `concert.js` to the concert's assigned color.
-5. `npm run build` and publish `dist/`.
+5. `npm run deploy` to publish to Cloudflare.

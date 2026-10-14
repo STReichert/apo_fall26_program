@@ -1,0 +1,16 @@
+// Cloudflare settings. Wrangler (Cloudflare's command-line tool) reads this
+// file when you run `npm run deploy`. There is no server code here — Cloudflare
+// just hosts the finished files that `npm run build` puts in dist/.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // The site's name in the Cloudflare dashboard; also its default web address:
+  // https://apo-fall26-program.<your-subdomain>.workers.dev
+  "name": "apo-fall26-program",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    // Which folder to upload.
+    "directory": "./dist",
+    // Unknown paths fall back to index.html instead of a 404 page.
+    "not_found_handling": "single-page-application"
+  }
+}
