@@ -5,28 +5,36 @@
 
 export const program = [
   {
-    composer: '[Composer Name]',
+    composer: 'Emil Nikolaus von Reznicek',
     composerDates: '[b. YYYY]',
-    title: '[Work Title]',
+    title: 'Donna Diana Overture',
     movements: [],
-    note: '[Optional: premiere, soloist, or guest conductor]',
+    note: 'Bowen Hoadley, Associate Conductor Finalist',
   },
   {
-    composer: '[Composer Name]',
+    composer: 'Jocely Rowland Khalaf',
     composerDates: '[YYYY–YYYY]',
-    title: '[Work Title, Op. XX]',
-    movements: ['[I. Tempo marking]', '[II. Tempo marking]', '[III. Tempo marking]'],
+    title: 'Memories from the Old World',
+    note: '2026 APO Composition Competition Winner',
+    movements: [],
+  },
+  {
+    composer: 'Johannes Brahms',
+    composerDates: '[YYYY–YYYY]',
+    title: 'Academic Festival Overture, Op. 80',
+    movements: [],
   },
   { intermission: true },
   {
-    composer: '[Composer Name]',
+    composer: 'Ludwig van Beethoven',
     composerDates: '[YYYY–YYYY]',
-    title: '[Work Title, Op. XX]',
+    title: 'Symphony No. 5 in C minor, Op. 67',
     movements: [
-      '[I. Tempo marking]',
-      '[II. Tempo marking]',
-      '[III. Tempo marking]',
-      '[IV. Tempo marking]',
+      'I. Allegro con brio',
+      'II. Andante con moto',
+      'III. Scherzo: Allegro',
+      'IV. Allegro',
+      'V. Presto',
     ],
   },
 ]

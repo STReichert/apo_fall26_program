@@ -36,10 +36,13 @@ export const concert = {
     heading: 'Welcome',
     // Each string in this list becomes its own paragraph.
     paragraphs: [
-      '[Opening welcome from the music director or board — thank the audience, introduce tonight’s theme, Color Me Romantic, and how it fits the Harmony season.]',
+      'Welcome to Color Me Romantic.',
       '[A second paragraph: what to listen for, a thank-you to volunteers and sponsors, or a reminder to silence phones.]',
     ],
-    signature: '[Name], [Title]',
+    signature: {
+      name: 'Amy Wilson',
+      title: 'Music Director',
+    }
   },
 
   links: {

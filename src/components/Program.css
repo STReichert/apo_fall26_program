@@ -1,0 +1,66 @@
+.program {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 52rem;
+}
+
+.work {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface);
+  border-left: 6px solid var(--accent-fill);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 48rem) {
+  .work {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+    gap: var(--space-5);
+  }
+}
+.work__composer {
+  margin: 0 0 var(--space-1);
+  font-family: var(--font-title);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.work__dates {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-muted);
+}
+
+.work__title {
+  margin: 0;
+  font-family: var(--font-read);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.work__note {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.work__movements {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.work__movements li {
+  padding-block: var(--space-1);
+  border-bottom: 1px solid var(--line);
+}
+.work__movements li:last-child { border-bottom: 0; }
