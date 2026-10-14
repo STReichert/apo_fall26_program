@@ -8,19 +8,20 @@
 // ===========================================================================
 
 export const leadership = [
-  { title: 'Music Director', name: '[Name]' },
-  { title: 'Guest Conductor', name: '[Name]' },
+  { title: 'Music Director', name: 'Amy Wilson' },
+  { title: 'Associate Conductor Finalist', name: 'Bowen Hoadley' },
 ]
 
 export const sections = [
   {
     name: 'Violin I',
     players: [
-      { name: '[Name]', role: 'concertmaster' },
-      { name: '[Name]', role: 'assistant principal' },
-      { name: '[Name]' },
-      { name: '[Name]' },
-      { name: '[Name]' },
+      { name: 'Earl Hough', role: 'concertmaster' },
+      { name: 'Tom Collins' },
+      { name: 'Brianna Faulkenbery', role: 'member' },
+      { name: 'Seth Reichert', role: 'member' },
+      { name: 'Dan Salzinger', role: 'member' },
+      { name: 'Debbi Whiting' },
     ],
   },
   {
