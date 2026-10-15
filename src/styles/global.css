@@ -53,14 +53,25 @@ a { color: var(--accent); text-underline-offset: 0.15em; }
   outline-offset: 3px;
 }
 
-/* Small uppercase labels ("eyebrows") — §07 Outfit carries labels. */
+/* Dates, times and venues — 09: JetBrains Mono Regular, capitals, open
+   letter-spacing. Only for information people scan; never a heading and
+   never longer than a line. */
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Small caps labels: roles, roster sections. Outfit carries labels (09).
+   They sit under or beside what they describe — never as an eyebrow. */
 .label {
   font-family: var(--font-title);
   font-size: var(--text-sm);
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
 }
 
 /* Hidden on screen but still read by screen readers. */

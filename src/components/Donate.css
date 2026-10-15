@@ -1,16 +1,21 @@
 .donate {
   padding-block: var(--space-6);
-  border-top: 1px solid var(--line);
 }
 
+/* 10 "Reversed · deep shade ground": the deep end of the concert's ramp
+   becomes the ground and the light tones carry the type. One primary, so
+   it stays on-brand while standing out from every other section. */
 .donate__card {
-  position: relative; /* the stripe below positions itself against this card */
-  overflow: hidden;   /* clips the stripe to the rounded corners */
+  position: relative; /* the rings below position against the card */
+  overflow: hidden;   /* clips the rings to the rounded corners */
+  isolation: isolate; /* keeps the rings' z-index inside the card */
   padding: var(--space-5) var(--space-4);
-  background: var(--off-black);
+  background:
+    radial-gradient(circle at 85% 0%, color-mix(in srgb, var(--c-3) 45%, transparent), transparent 55%),
+    linear-gradient(135deg, var(--c-5) 0%, var(--c-5) 45%, var(--c-4) 100%);
   color: var(--cream);
-  border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: 0 18px 40px rgb(0 0 0 / 0.18);
   text-align: center;
 }
 
@@ -18,20 +23,41 @@
   .donate__card { padding: var(--space-6); }
 }
 
-.donate__card::before {
+/* 05 Ramp layering: the same ring drawn twice in two ramp tones, offset
+   slightly — an echo of the logo ring, tucked into the corner. */
+.donate__card::before,
+.donate__card::after {
   content: '';
   position: absolute;
-  inset: 0 0 auto 0; /* top, right, bottom, left */
-  height: 6px;
-  background: var(--flag-stripe);
+  z-index: -1;
+  width: 18rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.donate__card::before {
+  top: -9rem;
+  right: -6rem;
+  border: 3px solid var(--c-2);
+  opacity: 0.55;
+}
+.donate__card::after {
+  top: -7.5rem;
+  right: -4.5rem;
+  border: 3px solid var(--c-3);
+  opacity: 0.55;
 }
 
-.donate__card::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0; /* top, right, bottom, left */
-  height: 6px;
-  background: var(--flag-stripe);
+.donate__heading {
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--c-2);
+}
+
+.donate__text {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: var(--space-4);
 }
 
 .donate__actions {
@@ -46,7 +72,8 @@
   min-height: 52px;
   padding-inline: var(--space-5);
   font-size: var(--text-lg);
-  box-shadow: 0 6px 20px rgb(0 0 0 / 0.3);
+  /* a soft halo in the concert color makes the button the brightest thing */
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--c-3) 25%, transparent), 0 8px 24px rgb(0 0 0 / 0.35);
 }
 
 .donate__more {
@@ -59,5 +86,5 @@
   margin: var(--space-4) 0 0;
   font-family: var(--font-title);
   font-size: var(--text-sm);
-  color: #c4bcb1;
+  color: color-mix(in srgb, var(--cream) 80%, transparent);
 }

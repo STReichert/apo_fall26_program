@@ -38,12 +38,12 @@ export default function Musicians() {
     : leadership
 
   return (
-    <Section id="musicians" eyebrow="The orchestra" title="Musicians">
+    <Section id="musicians" title="Musicians">
       <ul className="leaders">
         {leaders.map((person) => (
           <li key={person.title} className="leaders__item">
-            <span className="leaders__title">{person.title}</span>
             <span className="leaders__name">{person.name}</span>
+            <span className="label leaders__title">{person.title}</span>
           </li>
         ))}
       </ul>
@@ -51,7 +51,7 @@ export default function Musicians() {
       <div className="roster">
         {sections.map((section) => (
           <div key={section.name} className="roster__section">
-            <h3 className="roster__heading">{section.name}</h3>
+            <h3 className="label roster__heading">{section.name}</h3>
             <ul className="roster__players">
               {section.players.map((player, i) => (
                 <Player key={i} player={player} />

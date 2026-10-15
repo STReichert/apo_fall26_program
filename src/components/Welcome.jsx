@@ -6,8 +6,9 @@ export default function Welcome() {
   const { welcome } = concert
 
   return (
-    <Section id="welcome" eyebrow={concert.title} title={welcome.heading}>
+    <Section id="welcome" title={concert.title}>
       <div className="welcome">
+        {/* <h3 className="welcome__heading">{welcome.heading}</h3>  */}
         {welcome.paragraphs.map((text, i) => (
           <p key={i} className="welcome__text">
             {text}

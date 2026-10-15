@@ -9,7 +9,7 @@ export default function Program() {
         {program.map((item, i) => {
           if (item.intermission) {
             return (
-              <p key={i} className="program__intermission">
+              <p key={i} className="meta program__intermission">
                 Intermission
               </p>
             )
@@ -18,10 +18,14 @@ export default function Program() {
           return (
             <article key={i} className="work">
               <div className="work__heading">
-                <p className="work__composer">
-                  {item.composer} <span className="work__dates">({item.composerDates})</span>
-                </p>
+                <p className="work__composer">{item.composer}</p>
                 <h3 className="work__title">{item.title}</h3>
+                {item.date && (
+                  <p className="meta work__date">
+                    <span className="visually-hidden">Composed </span>
+                    {item.date}
+                  </p>
+                )}
                 {item.note && <p className="work__note">{item.note}</p>}
               </div>
 

@@ -11,7 +11,7 @@ import heroTall from '../assets/images/1080 x 1350 Social Media-for-digital-prog
 import logo from '../assets/images/apo-logo.png'
 
 export const concert = {
-  // §03 of the brand guide: one color per concert. One of:
+  // Guideline 03: one primary color per concert. One of:
   // red, orange, yellow, green, blue, purple, pink, lightblue, brown
   color: 'pink',
 
@@ -41,7 +41,7 @@ export const concert = {
     ],
     signature: {
       name: 'Amy Wilson',
-      title: 'Music Director',
+      title: 'Artistic Director',
     }
   },
 

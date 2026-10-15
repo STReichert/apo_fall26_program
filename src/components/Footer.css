@@ -1,16 +1,8 @@
 .footer {
-  position: relative;
   padding-block: var(--space-6);
   background: var(--off-black);
   color: var(--cream);
   text-align: center;
-}
-.footer::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 6px;
-  background: var(--flag-stripe);
 }
 
 .footer__inner {

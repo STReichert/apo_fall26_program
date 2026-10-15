@@ -6,11 +6,12 @@
    var(--token-name) instead of hard-coding a value, so changing the brand
    (or the concert color) happens here and nowhere else.
 
-   Source: reference/APOBrandingGuidelines-092026-1.pdf ("visual standards")
+   Source: APO visual identity proposal (Season 21: Harmony). Section
+   numbers in comments below (02, 04, 07, 09 …) refer to that document.
    ========================================================================== */
 
 :root {
-  /* ---- §02 The eleven flag colors (used together ONLY as the full set) ---- */
+  /* ---- 02 The eleven flag colors (used together ONLY as the full set) ---- */
   --flag-red: #e40303;
   --flag-orange: #ff8c00;
   --flag-yellow: #ffed00;
@@ -23,38 +24,42 @@
   --flag-white: #ffffff;
   --flag-black: #000000;
 
-  /* §06 "The full palette present, but held to an edge" — a thin stripe. */
+  /* 07 Palette band — the full palette, blended, in flag order. Ten stops:
+     black is not part of the blend. The one full-palette element allowed
+     on a single-concert piece, used in ONE place (the hero details bar). */
   --flag-stripe: linear-gradient(
-    90deg,
-    var(--flag-red) 0 9.09%, var(--flag-orange) 0 18.18%,
-    var(--flag-yellow) 0 27.27%, var(--flag-green) 0 36.36%,
-    var(--flag-blue) 0 45.45%, var(--flag-purple) 0 54.54%,
-    var(--flag-pink) 0 63.63%, var(--flag-lightblue) 0 72.72%,
-    var(--flag-brown) 0 81.81%, var(--flag-white) 0 90.9%,
-    var(--flag-black) 0 100%
+    96deg,
+    var(--flag-red), var(--flag-orange), var(--flag-yellow), var(--flag-green),
+    var(--flag-blue), var(--flag-purple), var(--flag-white), var(--flag-pink),
+    var(--flag-lightblue), var(--flag-brown)
   );
 
-  /* ---- §04 Five-step range for every palette color ----
-     1 = lightest, 2 = lighter, 3 = THE color, 4 = deeper, 5 = deepest   */
-  --red-1: #f3b4a7;      --red-2: #e57967;      --red-3: #d12d20;      --red-4: #81180f;      --red-5: #440804;
-  --orange-1: #f8d5b4;   --orange-2: #f3b47b;   --orange-3: #f09235;   --orange-4: #94581d;   --orange-5: #4f2d0b;
-  --yellow-1: #fdfac2;   --yellow-2: #fdf490;   --yellow-3: #fcee4f;   --yellow-4: #9c932e;   --yellow-5: #544f14;
-  --green-1: #aecbab;    --green-2: #73a46f;    --green-3: #377e33;    --green-4: #1e4c1c;    --green-5: #0b260a;
-  --blue-1: #a3bffa;     --blue-2: #618bf7;     --blue-3: #1e4cf5;     --blue-4: #0e2b98;     --blue-5: #041352;
-  --purple-1: #c3a4cd;   --purple-2: #9762a8;   --purple-3: #6b1682;   --purple-4: #3f094e;   --purple-5: #1f0227;
-  --pink-1: #fae0e8;     --pink-2: #f6c9d8;     --pink-3: #f3b2c7;     --pink-4: #976d7b;     --pink-5: #513941;
-  --lightblue-1: #d3eef7; --lightblue-2: #b0e2f1; --lightblue-3: #8cd5eb; --lightblue-4: #558391; --lightblue-5: #2b464e;
-  --brown-1: #bbac9f;    --brown-2: #8a725c;    --brown-3: #5b3b1c;    --brown-4: #35210d;    --brown-5: #190d04;
+  /* ---- 04 Tonal ramps: five steps for every palette color ----
+     1 = T60, 2 = T30, 3 = BASE (the flag color), 4 = S30, 5 = S55.
+     Values are the hex table from the guideline, not re-derived here.   */
+  --red-1: #ffb1a4;  --red-2: #f57161;  --red-3: #e40303;  --red-4: #8d0101;  --red-5: #4b0000;
+  --orange-1: #ffd3b0;  --orange-2: #ffb170;  --orange-3: #ff8c00;  --orange-4: #9e5500;  --orange-5: #552b00;
+  --yellow-1: #fef9bc;  --yellow-2: #fef480;  --yellow-3: #ffed00;  --yellow-4: #9e9300;  --yellow-5: #554e00;
+  --green-1: #a7cca8;  --green-2: #64a669;  --green-3: #008026;  --green-4: #004d13;  --green-5: #002606;
+  --blue-1: #9cc0ff;  --blue-2: #548dff;  --blue-3: #004dff;  --blue-4: #002c9e;  --blue-5: #001455;
+  --purple-1: #c9a3d0;  --purple-2: #a05fac;  --purple-3: #750787;  --purple-4: #460251;  --purple-5: #220129;
+  --pink-1: #ffdfe9;  --pink-2: #ffc7d8;  --pink-3: #ffafc8;  --pink-4: #9e6b7b;  --pink-5: #553841;
+  --lightblue-1: #ccf0f9;  --lightblue-2: #a3e3f3;  --lightblue-3: #74d7ee;  --lightblue-4: #458593;  --lightblue-5: #22464f;
+  --brown-1: #beab9d;  --brown-2: #8f7058;  --brown-3: #613915;  --brown-4: #391f08;  --brown-5: #1b0c02;
 
-  /* ---- §05 Backgrounds (neutrals, never a concert color) ---- */
+  /* ---- 02 Grounds (neutrals, never a concert color) ---- */
   --cream: #ede8df;
   --off-black: #4a4540;
   --black: #000000;
   --white: #ffffff;
 
-  /* ---- §07 Typography ---- */
+  /* ---- 09 Typography: three roles, three faces ----
+     Outfit = headlines & short text; reading serif = long copy (Newsreader
+     is one of three candidates still under review — swap it here);
+     JetBrains Mono = dates, times, venues, set in capitals. */
   --font-title: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-read: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
   /* Fluid type: clamp(MIN, PREFERRED, MAX) grows with the screen width,
      so headings shrink on phones without needing extra media queries. */
@@ -78,14 +83,14 @@
 }
 
 /* ==========================================================================
-   §03 ONE COLOR PER CONCERT
+   03 ONE PRIMARY PER PIECE
    --------------------------------------------------------------------------
    <div data-color="pink"> (set from src/content/concert.js) maps that color's
    range onto generic names --c-1 … --c-5. Components only ever say
    var(--c-3), so switching the whole program to "orange" is a one-word edit.
 
    --c-ink = the step that stays readable as text on cream. Pink, yellow and
-   light blue are already light (§04 "lighter steps on dark only"), so they
+   light blue are already light (04 "pale colors have a short range"), so they
    use their deepest step.
    ========================================================================== */
 [data-color='red']       { --c-1: var(--red-1);       --c-2: var(--red-2);       --c-3: var(--red-3);       --c-4: var(--red-4);       --c-5: var(--red-5);       --c-ink: var(--red-4); }
@@ -111,7 +116,7 @@
 :root,
 [data-color] {
   --bg: var(--cream);
-  --surface: var(--white);        /* cards sit on white, per §05 */
+  --surface: var(--white);        /* white is a secondary, usable with any primary */
   --text: var(--off-black);
   --text-muted: #6f6861;
   --line: #d9d2c6;
@@ -119,10 +124,14 @@
   --accent-fill: var(--c-3);      /* concert color as a fill/shape   */
   --accent-soft: var(--c-1);      /* faint tint for backgrounds      */
   --on-accent-fill: var(--off-black);
+  /* 04: one primary blended through its own ramp — the only gradient a
+     single-concert piece may repeat. Pale tints vanish on cream, so the
+     light theme runs BASE → S55; the dark theme runs T30 → S30. */
+  --tonal: linear-gradient(90deg, var(--c-3), var(--c-4), var(--c-5));
   color-scheme: light;
 }
 
-/* Phones in a darkened concert hall: §05 says the warm off-black is the
+/* Phones in a darkened concert hall: the guideline makes warm off-black the
    default ground for concert pieces, and light steps read best on it. */
 @media (prefers-color-scheme: dark) {
   :root,
@@ -136,6 +145,7 @@
     --accent-fill: var(--c-3);
     --accent-soft: #554a4c;
     --on-accent-fill: var(--off-black);
+    --tonal: linear-gradient(90deg, var(--c-2), var(--c-3), var(--c-4));
     color-scheme: dark;
   }
 }

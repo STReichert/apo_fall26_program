@@ -1,6 +1,17 @@
 .section {
   padding-block: var(--space-6);
-  border-top: 1px solid var(--line);
+}
+
+/* Divider above every section title: the concert primary blended through
+   its ramp, fading out so it reads as a rule rather than a stripe. */
+.section__head::before {
+  content: '';
+  display: block;
+  height: 4px;
+  margin-bottom: var(--space-5);
+  background: var(--tonal);
+  -webkit-mask-image: linear-gradient(90deg, #000 60%, transparent);
+          mask-image: linear-gradient(90deg, #000 60%, transparent);
 }
 
 .section__head {
@@ -8,24 +19,9 @@
 }
 
 .section__title {
+  margin: 0;
   font-size: var(--text-2xl);
-  font-weight: 300; /* §07: Outfit at a light weight, as in the brand guide */
+  font-weight: 300; /* 09: Outfit at a light weight for display */
   letter-spacing: -0.01em;
-  text-transform: lowercase; /* brand guide sets titles in lowercase */
   color: var(--text);
-}
-
-/* Short underline in the concert color, three tones (§04: skip a step). */
-.section__title::after {
-  content: '';
-  display: block;
-  width: 4.5rem;
-  height: 5px;
-  margin-top: var(--space-3);
-  background: linear-gradient(
-    90deg,
-    var(--c-1) 0 33%,
-    var(--c-3) 0 66%,
-    var(--c-5) 0
-  );
 }

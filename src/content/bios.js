@@ -10,7 +10,7 @@ import earlPhoto from '../assets/images/Earl-Hough-violin.jpg'
 export const bios = [
   {
     name: 'Amy Wilson',
-    role: 'Music Director & Conductor',
+    role: 'Artistic Director & Conductor',
     photo: amyPhoto,
     paragraphs: [
       'Amy Wilson is a conductor living in Atlanta who has conducted orchestras throughout the United States, Mexico, and Europe. Currently, she is the Artistic Director of the Atlanta Philharmonic Orchestra and the Principal Guest Conductor of the Atlanta Musicians Orchestra. She has upcoming appearances with Atlanta Contemporary Ensemble and Diversitá Opera Arts.',

@@ -21,8 +21,8 @@ function Bio({ bio }) {
       </div>
 
       <div className="bio__body">
-        <p className="label bio__role">{bio.role}</p>
         <h3 className="bio__name">{bio.name}</h3>
+        <p className="label bio__role">{bio.role}</p>
 
         <p>{first}</p>
         {isOpen && more.map((text, i) => <p key={i}>{text}</p>)}
@@ -44,7 +44,7 @@ function Bio({ bio }) {
 
 export default function Bios() {
   return (
-    <Section id="artists" eyebrow="Meet the artists" title="Biographies">
+    <Section id="artists" title="Biographies">
       <div className="bios">
         {bios.map((bio) => (
           <Bio key={bio.name} bio={bio} />

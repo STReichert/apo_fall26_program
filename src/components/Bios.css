@@ -62,22 +62,21 @@
   .bio__body { padding: var(--space-5); }
 }
 
-.bio__role { margin-bottom: var(--space-1); color: var(--accent); }
-
 .bio__name {
+  margin-bottom: var(--space-1);
   font-size: var(--text-xl);
   font-weight: 500;
 }
+
+.bio__role { color: var(--accent); }
 
 .bio__toggle {
   padding: var(--space-2) 0;
   border: 0;
   background: none;
   font-family: var(--font-title);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--accent);
   cursor: pointer;
 }

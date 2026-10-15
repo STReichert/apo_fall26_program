@@ -1,5 +1,7 @@
 // ===========================================================================
-// UPCOMING CONCERTS — each concert carries its own assigned color (§03).
+// UPCOMING CONCERTS — the rest of the season, each in its assigned color.
+// Several primaries side by side stretches rule 03 (one primary per piece);
+// it follows the guideline's "Season progress" / "Color as wayfinding" ideas.
 // ===========================================================================
 
 export const upcoming = [

@@ -24,7 +24,7 @@ export default function Hero() {
       </picture>
 
       <div className="hero__details">
-        <div className="container hero__details-inner">
+        <div className="container meta hero__details-inner">
           <p>
             <strong>{concert.date}</strong> · {concert.time}
           </p>

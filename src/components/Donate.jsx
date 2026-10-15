@@ -1,5 +1,4 @@
 // DONATE — the ask, with one-tap amount buttons that open Square.
-// STARTER: works, but unstyled. See docs/LEARNING-PATH.md → Step 7.
 import { concert } from '../content/concert.js'
 import './Donate.css'
 
@@ -10,7 +9,6 @@ export default function Donate() {
     <section id="donate" className="donate">
       <div className="container">
         <div className="donate__card">
-          <p className="label donate__eyebrow">Support the music</p>
           <h2 className="donate__heading">{donate.heading}</h2>
           <p className="donate__text">{donate.text}</p>
 
