@@ -1,32 +1,32 @@
 // DONATE — the ask, with one-tap amount buttons that open Square.
 // STARTER: works, but unstyled. See docs/LEARNING-PATH.md → Step 7.
 import { concert } from '../content/concert.js'
-import Section from './Section.jsx'
+import './Donate.css'
 
 export default function Donate() {
-  const { donate } = concert
+  const { donate, links } = concert
 
   return (
-    <Section id="donate" eyebrow="Support the music" title={donate.heading}>
-      <p>{donate.text}</p>
-      <div>
-        {donate.quickAmounts.map(({ amount, url }) => (
-          // `url ?? donate.url` means: use this amount's link if it exists,
-          // otherwise fall back to the general donation page.
-          <a
-            key={amount}
-            className="button"
-            href={url ?? donate.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Give ${amount}
-          </a>
-        ))}
-        <a className="button button--outline" href={donate.url} target="_blank" rel="noopener noreferrer">
-          Other amount
-        </a>
+    <section id="donate" className="donate">
+      <div className="container">
+        <div className="donate__card">
+          <p className="label donate__eyebrow">Support the music</p>
+          <h2 className="donate__heading">{donate.heading}</h2>
+          <p className="donate__text">{donate.text}</p>
+
+          <div className="donate__actions">
+            <a className="button donate__button" href={donate.url} target="_blank" rel="noopener noreferrer">
+              {donate.buttonLabel}
+            </a>
+            <a className="donate__more" href={links.website} target="_blank" rel="noopener noreferrer">
+              More ways to support APO
+            </a>
+          </div>
+
+          <p className="donate__note">{donate.note}</p>
+        </div>
       </div>
-    </Section>
+    </section>
   )
 }
+

@@ -7,7 +7,7 @@
 // To swap a picture: drop the new file in src/assets/images/ and change the
 // filename on the matching line below.
 import heroWide from '../assets/images/hero-wide.jpg'
-import heroTall from '../assets/images/hero-tall.jpg'
+import heroTall from '../assets/images/1080 x 1350 Social Media-for-digital-program.png'
 import logo from '../assets/images/apo-logo.png'
 
 export const concert = {
@@ -50,17 +50,12 @@ export const concert = {
   },
 
   donate: {
-    heading: 'Keep Atlanta in Harmony',
-    text: '[Ticket sales cover only part of what it takes to put an orchestra on stage. Your gift supports rehearsal space, music, and guest artists.]',
-    // General donation page (any amount).
-    url: 'https://squareup.com/market/atlanta-philharmonic-orchestra',
-    // One-tap buttons. Make a Square "Payment Link" for each amount
-    // (Square Dashboard → Payment Links → Create) and paste it in `url`.
-    // Until then, `url: null` falls back to the general page above.
-    quickAmounts: [
-      { amount: 5, url: null },
-      { amount: 25, url: null },
-      { amount: 50, url: null },
-    ],
+    heading: 'Become a Donor Today',
+    text: 'Contribute to the Atlanta Philharmonic Orchestra and help us keep the music alive! Click the link to make a financial contribution. Donations help APO with music purchases and licenses, scholarships for members, outreach to local communities, and guest musician pay.',
+    // Square payment link (from Square Dashboard → Payment Links).
+    url: 'https://square.link/u/8vHCexZG',
+    buttonLabel: 'Give $5 or $10',
+    note: 'Opens our secure Square checkout, where you choose $5 or $10.',
   },
+
 }

@@ -32,12 +32,11 @@ export const bios = [
     ],
   },
   {
-    name: '[Composer Name]',
+    name: 'Jocelyn Rowland Khalaf',
     role: 'Composer',
     photo: composerPhoto,
     paragraphs: [
-      '[First paragraph: who they are and how tonight’s piece came to APO.]',
-      '[More: commissions, recordings, education.]',
+      'Jocelyn Rowland Khalaf started playing violin at the age of three in Joplin, Missouri. The daughter of a piano tuner/composer/theater organist, she was always surrounded by music as a child. After graduating with a music degree from the University of Tulsa, Jocelyn’s performance career has spanned every genre, including everything from touring with Outlaw country star Billy Joe Shaver to Grammy winning Los Lobos to Tulsa based We The Ghost, which won several LA Music Awards and whose single “Let me Know” charted at #4 on Billboard Hot Singles. In addition to performing, Jocelyn is an accomplished educator, and also a violin coach for Tulsa Honors Orchestra.  She created the Harmony Project Rock Orchestra, a fully electric orchestra, which is the only one of its kind in Oklahoma.  She is also a film composer and holds professional certificates from Berklee College of Music in Logic and Composition and Orchestration for Film and TV. In 2026, Jocelyn composed the score to the film “When The Rain Comes,” which won the “Best Narrative Feature” at the Circle Cinema Film Festival 2026. She is also the composer for the upcoming documentary about the creator of Strawberry Shortcake, Muriel Fahrion titled “Strawberry Colored Glasses."',
     ],
   },
 ]

@@ -1,0 +1,63 @@
+.donate {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.donate__card {
+  position: relative; /* the stripe below positions itself against this card */
+  overflow: hidden;   /* clips the stripe to the rounded corners */
+  padding: var(--space-5) var(--space-4);
+  background: var(--off-black);
+  color: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .donate__card { padding: var(--space-6); }
+}
+
+.donate__card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0; /* top, right, bottom, left */
+  height: 6px;
+  background: var(--flag-stripe);
+}
+
+.donate__card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0; /* top, right, bottom, left */
+  height: 6px;
+  background: var(--flag-stripe);
+}
+
+.donate__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3) var(--space-5);
+}
+
+.donate__button {
+  min-height: 52px;
+  padding-inline: var(--space-5);
+  font-size: var(--text-lg);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.3);
+}
+
+.donate__more {
+  font-family: var(--font-title);
+  font-weight: 500;
+  color: var(--cream);
+}
+
+.donate__note {
+  margin: var(--space-4) 0 0;
+  font-family: var(--font-title);
+  font-size: var(--text-sm);
+  color: #c4bcb1;
+}

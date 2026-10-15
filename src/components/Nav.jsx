@@ -44,7 +44,7 @@ export default function Nav() {
           ))}
         </div>
 
-        <a href="#donate" className="nav__link nav__link--give">
+        <a href="https://square.link/u/8vHCexZG" className="nav__link nav__link--give">
           Donate
         </a>
       </div>
