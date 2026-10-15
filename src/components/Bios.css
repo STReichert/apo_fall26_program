@@ -1,0 +1,86 @@
+.bios {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 60rem;
+}
+
+.bio {
+  display: grid;
+  overflow: hidden; /* clips the photo to the card's rounded corners */
+  background: var(--surface);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 48rem) {
+  .bio {
+    grid-template-columns: 15rem 1fr;
+  }
+}
+
+.bio__photo {
+  aspect-ratio: 4 / 3;
+  background: var(--off-black);
+}
+
+@media (min-width: 48rem) {
+  .bio__photo {
+    aspect-ratio: auto;
+    min-height: 18rem;
+  }
+}
+
+.bio__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.bio__placeholder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.bio__placeholder::before {
+  content: '';
+  width: 4.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  translate: -1.75rem 0;
+  background: var(--c-1);
+  box-shadow:
+    1.75rem 0 0 var(--c-3),
+    3.5rem 0 0 var(--c-4);
+}
+
+.bio__body {
+  padding: var(--space-4);
+}
+
+@media (min-width: 48rem) {
+  .bio__body { padding: var(--space-5); }
+}
+
+.bio__role { margin-bottom: var(--space-1); color: var(--accent); }
+
+.bio__name {
+  font-size: var(--text-xl);
+  font-weight: 500;
+}
+
+.bio__toggle {
+  padding: var(--space-2) 0;
+  border: 0;
+  background: none;
+  font-family: var(--font-title);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.bio__toggle::after { content: ' +'; }
+.bio__toggle[aria-expanded='true']::after { content: ' –'; }
