@@ -49,3 +49,48 @@
   font-size: var(--text-sm);
   color: var(--text-muted);
 }
+
+/* Program notes — sit below the signature, set off by a thin rule. */
+.notes {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+}
+
+.notes__heading {
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-4);
+}
+
+.notes__item + .notes__item {
+  margin-top: var(--space-5);
+}
+
+.notes__title {
+  font-family: var(--font-title);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.notes__composer {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.notes__text {
+  margin: 0;
+}
+
+.notes__link {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-title);
+  font-size: var(--text-sm);
+}
+
+.notes__link a {
+  color: var(--accent);
+}

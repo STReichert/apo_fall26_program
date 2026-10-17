@@ -6,6 +6,7 @@
 import composerPhoto from '../assets/images/composer.jpg'
 import amyPhoto from '../assets/images/Amy_bw_web.jpg'
 import earlPhoto from '../assets/images/Earl-Hough-violin.jpg'
+import bowenPhoto from '../assets/images/bowen.jpg'
 
 export const bios = [
   {
@@ -16,6 +17,16 @@ export const bios = [
       'Amy Wilson is a conductor living in Atlanta who has conducted orchestras throughout the United States, Mexico, and Europe. Currently, she is the Artistic Director of the Atlanta Philharmonic Orchestra and the Principal Guest Conductor of the Atlanta Musicians Orchestra. She has upcoming appearances with Atlanta Contemporary Ensemble and Diversitá Opera Arts.',
       'Amy has appeared as a guest conductor with the Agnes Scott College-Community Orchestra, Atlanta Musicians Orchestra, Yakima Symphony Chamber Orchestra, Ocmulgee Symphony Orchestra, and the Warner Robins Air Force Band. She has worked with internationally renowned soloists including Kenn Wagner, Christina Smith, and Justin Bruns. She is collaborating with Julie Coucheron this spring with Atlanta Philharmonic Orchestra. Amy has been on television, radio including WABE, and has had an article written about work with Atlanta Philharmonic Orchestra in David magazine. In 2005, Amy was named the winner of the International Conductors Workshop and Competition.',
       'Amy has studied with such distinguished conductors as Robert Spano, Adrian Gnam, Gustav Meier, Jesús López-Cobos, Anshel Brusilow, and Wayne Wyman. She holds a degree from the University of Cincinnati College-Conservatory of Music, and advanced degrees from the University of North Texas, and Mercer University. Robert Spano is composing a new work to be premiered by the Atlanta Philharmonic Orchestra in 2019.',
+    ],
+  },
+  {
+    name: 'Bowen Hoadley',
+    role: 'Associate Conductor Finalist',
+    photo: bowenPhoto,
+    paragraphs: [
+      'With 10 years of experience as an elementary music educator, Bowen Hoadley has taught general music, band, orchestra, and chorus. His primary instrument is the saxophone, but he has developed a special appreciation for string instruments and enjoys playing violin and trumpet alongside his students.',
+      'He recently earned a Master’s degree in Conducting from Georgia State University, with an emphasis on orchestral conducting. He has participated in conducting workshops across the country, studying with distinguished educators and conductors Gary Lewis, Donald Portnoy, Soo Han, Ingrid Martin, Larry Livingston, and Manny Alvarez. He currently continues his conducting studies with Dr. Scott Stewart.',
+      'He is honored to serve as a guest conductor and is grateful for the opportunity to make music with the Atlanta Philharmonic Orchestra. He extends his sincere thanks for the warm hospitality and the opportunity to be part of this performance.',
     ],
   },
   {

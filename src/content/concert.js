@@ -36,8 +36,9 @@ export const concert = {
     heading: 'Welcome',
     // Each string in this list becomes its own paragraph.
     paragraphs: [
-      'Welcome to Color Me Romantic.',
-      '[A second paragraph: what to listen for, a thank-you to volunteers and sponsors, or a reminder to silence phones.]',
+      'Welcome to Color Me Romantic and to the start of the 2026–2027 season for the Atlanta Philharmonic. We are excited to share our program with you tonight. This orchestra of volunteer musicians puts so much time, energy, and love into their music and it brings us great joy to share it with you — our friends, families, and supporters.',
+      'Our program tonight features some of the great works of the Romantic period as well as a piece composed in the spirit of many Romantic composers, the winner of our composition competition from this past year.',
+      'Thank you for joining us tonight and for being a part of the music and this fabulous community.',
     ],
     signature: {
       name: 'Amy Wilson',

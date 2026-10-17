@@ -21,17 +21,17 @@ export const sections = [
       { name: 'Brianna Faulkenberry', role: 'member' },
       { name: 'Seth Reichert', role: 'member' },
       { name: 'Dan Salzinger', role: 'member' },
-      { name: 'Debbi Whiting' },
+      { name: 'Debbi Whiting', role: 'member' },
     ],
   },
   {
     name: 'Violin II',
     players: [
       { name: 'Jordan Helms', role: 'principal' },
-      { name: 'Earlisha Curney' },
-      { name: 'Scott Marler' },
-      { name: 'Marlina McKay' },
-      { name: 'Marilyn Pipkin' },
+      { name: 'Earlisha Curney', role: 'member' },
+      { name: 'Scott Marler', role: 'member' },
+      { name: 'Marlina McKay', role: 'member' },
+      { name: 'Marilyn Pipkin', role: 'member' },
       { name: 'Megan Wilson' },
     ],
   },
@@ -39,18 +39,17 @@ export const sections = [
     name: 'Viola',
     players: [
       { name: 'Laura Kuechenmeister', role: 'principal' },
-      { name: 'Forrest Carson' },
-      { name: 'Dylan Cifuentes' },
+      { name: 'Forrest Carson', role: 'member' },
+      { name: 'Dylan Cifuentes', role: 'member' },
     ],
   },
   {
     name: 'Cello',
     players: [
       { name: 'Tim Feverston', role: 'principal' },
-      { name: 'Theo Enzo Aalto' },
-      { name: 'Faith Hoover' },
-      { name: 'Avery Jacobs' },
-      { name: 'Danielle Liburd' },
+      { name: 'Faith Hoover', role: 'member' },
+      { name: 'Avery Jacobs', role: 'member' },
+      { name: 'Danielle Liburd', role: 'member' },
       { name: 'Kevin Wilson' },
     ],
   },
@@ -65,30 +64,30 @@ export const sections = [
     name: 'Flute & Piccolo',
     players: [
       { name: 'Derrick Jones', role: 'principal' },
-      { name: 'April Houston' },
-      { name: 'Lynnette Kenith', note: 'Piccolo' },
+      { name: 'April Houston', role: 'member' },
+      { name: 'Lynnette Kenith', role: 'member', note: 'Piccolo' },
     ],
   },
   {
     name: 'Oboe',
     players: [
       { name: 'Tom Underwood', role: 'principal' },
-      { name: 'Adelyn Carney' },
+      { name: 'Adelyn Carney', role: 'member' },
     ],
   },
   {
     name: 'Clarinet',
     players: [
       { name: 'Jonathan Seletyn', role: 'principal' },
-      { name: 'Bethany Petri' },
+      { name: 'Bethany Petri', role: 'member' },
     ],
   },
   {
     name: 'Bassoon',
     players: [
       { name: 'Joe Sarra', role: 'principal' },
-      { name: 'Charlie Jaret' },
-      { name: 'Jason Jones', note: 'Contrabassoon' },
+      { name: 'Charlie Jaret', role: 'member' },
+      { name: 'Jason Jones', role: 'member', note: 'Contrabassoon' },
     ],
   },
   {
@@ -96,7 +95,7 @@ export const sections = [
     players: [
       { name: 'Magdalen Chouinard' },
       { name: 'Elaina Labossiere' },
-      { name: 'Greta Masetti' },
+      { name: 'Greta Masetti', role: 'member' },
       { name: 'Candace Weslosky' },
     ],
   },
@@ -110,7 +109,6 @@ export const sections = [
   {
     name: 'Trombone',
     players: [
-      { name: 'Fred Land', role: 'principal' },
       { name: 'Dalian Bryan' },
       { name: 'Tim Heston' },
       { name: 'Robert Lurie' },
@@ -122,6 +120,6 @@ export const sections = [
   },
   {
     name: 'Timpani',
-    players: [{ name: 'Mollie Beavers' }],
+    players: [{ name: 'Mollie Beavers', role: 'member' }],
   },
 ]
